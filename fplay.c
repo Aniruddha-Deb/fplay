@@ -167,12 +167,12 @@ int main() {
 					break;
 				}
 			}
-			printf("%f\n", bin_to_float(s, e, m));
+			printf("%g\n", bin_to_float(s, e, m));
 		}
 		else if (strncmp("sem_to_float", input, strlen("sem_to_float")) == 0) {
 			unsigned int s, e, m;
 			sscanf(input, "sem_to_float( %i , %i , %i )", &s, &e, &m);
-			printf("%f\n", sem_to_float(s, e, m));
+			printf("%g\n", sem_to_float(s, e, m));
 		}
 		else if (strcmp(input, "demo()\n") == 0) {
 			printf("%s", DEMO);
